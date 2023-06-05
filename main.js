@@ -1,16 +1,25 @@
 // probando linkeo
 console.log("me escuchan?")
 
+
+
 let nombre = prompt("Hola!!!! ¿cómo te llamas?" )
 
 
 // Utilizamos if-else para deterinar si el usuario esta interesado en el servicio a prestar
-
 let intencion= prompt ("hola"+ " " + nombre + " " + "¿quieres pescar en stardew valley? s/n")
-if (intencion == "s") {
- let estacion = prompt("¿en qué estación te encuentras?" + " primavera/verano/otoño/invierno" ) 
- // utilizamos switch para determinar qué hacer en cada estación
+while (intencion != "s", "n") {
+    let intencion= prompt ("hola"+ " " + nombre + " " + "¿quieres pescar en stardew valley? s/n")
 
+
+if (intencion == "s") {
+
+ 
+ // utilizamos switch para determinar qué hacer en cada estación
+ let estacion = prompt("¿en qué estación te encuentras?" + " primavera/verano/otoño/invierno" ) 
+ while (estacion != "primavera","verano","otoño","invierno") {
+    let estacion = prompt("¿en qué estación te encuentras?" + " primavera/verano/otoño/invierno" ) 
+    
  switch (estacion) {
 
     case "primavera":
@@ -64,16 +73,16 @@ if (intencion == "s") {
 
     default:
         alert ("eso no es una estación")
+        }
+    break;
+    }
 
- }
 
 }
 else if (intencion == "n") {
     alert (" pues deberías")
+break;
 }
-
-else {
-    alert ("por favor " + nombre + " , ingresa s/n") 
 }
 
 
